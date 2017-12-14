@@ -1,15 +1,11 @@
-var Fruits = () => (
-  <li>fruits</li>
-);
-
-var Vegetables = () => (
-  <li>vegetables</li>
+var GroceryListItem = (props) => (
+  <li>{props.groceryItem}</li>
 );
 
 var GroceryList = () => (
   <ul>
-    <Fruits />
-    <Vegetables />
+    <GroceryListItem groceryItem={'vegetables'}/>
+    <GroceryListItem groceryItem={'fruits'}/>
   </ul>
 );
 
